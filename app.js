@@ -1,12 +1,14 @@
+mensagemInicial();
 let listaNumerosSecretos = [];
 let tentativas = 0;
-let numeroSecreto = gerarNumeroAleatorio();
+let numeroSecreto;
 let numeroLimite = 10;
-mensagemInicial();
+numeroSecreto = gerarNumeroAleatorio();
 
 function mudarTexto(tag, texto){
     let campo = document.querySelector(tag);
     campo.innerHTML = texto;
+    responsiveVoice.speak(texto, "Brazilian Portuguese Female", {rate:1.2});
 }
 
 function verificarChute(){
