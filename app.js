@@ -13,21 +13,6 @@ function mudarTexto(tag, texto){
 
 function verificarChute(){
     let chute = document.querySelector("input").value;
-        // if (chute == numeroSecreto){
-        //     mudarTexto("h1", "Acertou!");
-        //     let palavraTentativa = tentativas > 1 ? "tentativas" : "tentativa";
-        //     let mensagemTentativas = `Parabéns! Você descobriu o número secreto com ${tentativas} ${palavraTentativa}! `;
-        //     mudarTexto("p", mensagemTentativas);
-        // } else {
-        //     if(chute > numeroSecreto){
-        //         mudarTexto("h1", "Você errou! Tente novamente.");
-        //         mudarTexto("p", `O número secreto é menor que ${chute}.`);
-        //     } else {
-        //         mudarTexto("h1", "Você errou! Tente novamente.");
-        //         mudarTexto("p", `O número secreto é maior que ${chute}.`);
-        //     }
-        //     tentativas++;
-        // }
         if (chute != numeroSecreto){
             mudarTexto("h1", "Você errou! Tente novamente.");
 
